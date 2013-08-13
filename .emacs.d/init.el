@@ -79,3 +79,12 @@
 (require 'jade-mode)    
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+
+;; -----------------------
+;; -- Git configuration --
+;; -----------------------
+(require 'git-commit)
+(add-hook 'git-commit-mode-hook 'flyspell-mode-on)
+(add-hook 'git-commit-mode-hook (lambda () (toggle-save-place 0)))
+
+
