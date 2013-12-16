@@ -1,2 +1,2 @@
-# Setup awshost keys and environment variables
-source $HOME/aws_setup/.bashrc_awshost0
+## Setup awshost keys and environment variables
+#source $HOME/aws_setup/.bashrc_awshost0
