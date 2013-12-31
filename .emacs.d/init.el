@@ -65,14 +65,12 @@
 (global-set-key "\M-o" 'other-window)
 (global-set-key "\M-i" 'back-window)
 (global-set-key "\C-z" 'zap-to-char)
-
-(global-set-key (kbd "<backspace>") 'backward-delete-char)
-(define-key c-mode-map (kbd "<backspace>") 'backward-delete-char) 
-;; (global-set-key "\C-h" 'backward-delete-char)
-
+(global-set-key "\C-h" 'backward-delete-char)
 (global-set-key "\M-d" 'delete-word)
 (global-set-key "\M-h" 'backward-delete-word)
 (global-set-key "\M-u" 'zap-to-char)
+
+(normal-erase-is-backspace-mode 0)
 
 ;; ---------------------------
 ;; -- JS Mode configuration --
