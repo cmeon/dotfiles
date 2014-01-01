@@ -22,7 +22,7 @@
 (require 'compile)
 (ido-mode t)
 (menu-bar-mode -1)
-(normal-erase-is-backspace-mode 1)
+(normal-erase-is-backspace-mode 0)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (setq column-number-mode t)
@@ -69,8 +69,6 @@
 (global-set-key "\M-d" 'delete-word)
 (global-set-key "\M-h" 'backward-delete-word)
 (global-set-key "\M-u" 'zap-to-char)
-
-(normal-erase-is-backspace-mode 0)
 
 ;; ---------------------------
 ;; -- JS Mode configuration --
